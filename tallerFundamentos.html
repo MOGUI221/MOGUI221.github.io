@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller Fundamentos</title>
+</head>
+<body>
+    <h1>Taller Fundamentos</h1>
+    <h4>Ejercicio 1</h4>
+    <p id = 'resp1'></p>
+    <script>
+        var apellido = 'Pombo Gil' ;
+        const respuesta1 = document.getElementById('resp1');
+        respuesta1.innerHTML = apellido;
+
+    </script>
+    
+    <h4>Ejercicio 2</h4>
+    <p id = 'resp2'></p>
+    <script>
+        var nombreCiudad = 'Guadalajara de Buga' ;
+        const resp2 = document.getElementById('resp2');
+        resp2.innerHTML = nombreCiudad;
+
+        
+    </script>
+
+    <h4>Ejercicio 3</h4>
+    <p id = 'resp3'></p>
+    <script>
+        var anioNacimiento = 2002 ;
+        var edadActual = 2024 - anioNacimiento;
+        const resp3 = document.getElementById('resp3');
+        resp3.innerHTML = edadActual;
+        
+    </script>
+
+    <h4>Ejercicio 4</h4>
+    <p id = 'resp4'></p>
+    <script>
+        var nombrePelicula = 'Fast and Furius 8';
+        const resp4 = document.getElementById('resp4');
+        resp4.innerHTML = nombrePelicula;
+    </script>
+
+    <h4>Ejercicio 5</h4>
+    <p id = 'resp5'></p>
+    <script>
+        var nombreAnimal = 'Gato'
+        const resp5 = document.getElementById('resp5');
+        resp5.innerHTML = nombreAnimal;
+        
+    </script>
+
+    <h4>Ejercicio 6</h4>
+    <p id = 'resp6'></p>
+    <script>
+        function calcularAreaCirculo(radio) {
+
+            var resultado = radio*radio*Math.PI;
+
+            return resultado;
+        }
+        var resulArea ='Area = '+ calcularAreaCirculo(12) + ' Cm';
+        const resp6 = document.getElementById('resp6');
+        resp6.innerHTML = resulArea;
+
+        
+    </script>
+
+    <h4>Ejercicio 7</h4>
+    <p id = 'resp7'></p>
+    <script>
+        function calcularPromedioTresNumeros(num1, num2, num3) {
+            
+            var resultado = (num1 + num2 + num3)/ 3 ;
+
+            return resultado;
+        }
+        var prom ='Promedio = '+ calcularPromedioTresNumeros(2,5,46) ;
+        const resp7 = document.getElementById('resp7');
+        resp7.innerHTML = prom;
+
+    </script>
+
+    <h4>Ejercicio 8</h4>
+    <p id = 'resp8'></p>
+    <script>
+        function calcularEdadfutura(edad) {
+
+            var resultado = edad + 10;
+
+            return resultado;
+        }
+        var resulEdad ='Edad en 10 años = '+ calcularEdadfutura(22) + ' años';
+        const resp8 = document.getElementById('resp8');
+        resp8.innerHTML = resulEdad;
+
+        
+    </script>
+
+    <h4>Ejercicio 9</h4>
+    <p id = 'resp9'></p>
+    <script>
+        function calcularDescuento(precio, descuento) {
+
+            var resultado = (descuento/100)*precio;
+
+            return resultado;
+        }
+        var resulPrecio ='Precio con descuento = '+ calcularDescuento(1200000,32) + ' Pesos';
+        const resp9 = document.getElementById('resp9');
+        resp9.innerHTML = resulPrecio ;
+
+    </script>
+
+    <h4>Ejercicio 10</h4>
+    <p id = 'resp10'></p>
+    <script>
+        function generarNumeroAleatorio(min, max) {
+            
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random()*(max - min) + min) ;
+        }
+        var aleatorio ='Numero aleatorio entre 0 y 100 = '+ generarNumeroAleatorio(0,100);
+        const resp10 = document.getElementById('resp10');
+        resp10.innerHTML = aleatorio;
+        
+    </script>
+
+    <h4>Ejercicio 11</h4>
+    <p id = 'resp11'></p>
+    <script>
+        function esMayorDeEdad(edad) {
+            
+            if (edad >= 18){
+                var check = 'Es mayor de edad'
+            } else {
+                var check = 'Es menor de edad'
+            }
+            return check ;
+        }
+        var aleatorio = esMayorDeEdad(18);
+        const resp11 = document.getElementById('resp11');
+        resp11.innerHTML = aleatorio;
+        
+    </script>
+
+    <h4>Ejercicio 12</h4>
+    <p id = 'resp12'></p>
+    <script>
+        
+
+        function compararCadenas(cad1, cad2) {
+            
+            if (cad1 === cad2){
+                var check1 = 'Son iguales'
+            }else {
+                var chack1 = 'Son distintas'
+            }            
+            return check1 ;
+        }
+        var cadena = compararCadenas('Carro','Carro');
+        const resp12 = document.getElementById('resp12');
+        resp12.innerHTML = cadena;
+        
+    </script>
+
+    <h4>Ejercicio 13</h4>
+    <p id = 'resp13'></p>
+    <script>
+        
+
+        function evaluarCalificaciones(nota) {
+            
+            if (nota <= 100 && nota >= 90){
+                var check2 = 'Excelente'
+            }else if (nota <= 89 && nota >= 80){
+                var check2 = 'Bueno'
+            }else if (nota <= 79 && nota >= 70){
+                var check2 = 'Regular'
+            }else if (nota < 70){
+                var check2 = 'Insuficiente'
+            }
+            return check2 ;
+        }
+        var calif = evaluarCalificaciones(89);
+        const resp13 = document.getElementById('resp13');
+        resp13.innerHTML = calif;
+        
+    </script>
+
+    <h4>Ejercicio 14</h4>
+    <p id = 'resp14'></p>
+    <script>
+        
+
+        function verificarParidad(numCheck) {
+            
+            if (numCheck % 2 === 0){
+                var check3 = 'Es par'
+            }else {
+                var check3 = 'Es impar'
+            }
+            return check3 ;
+        }
+        var parImpar = verificarParidad(89);
+        const resp14 = document.getElementById('resp14');
+        resp14.innerHTML = parImpar;
+        
+    </script>
+
+    <h4>Ejercicio 15</h4>
+    <p id = 'resp15'></p>
+    <script>
+        
+
+        function esPositivoONegativo(simbol) {
+            
+            if (simbol*-1 === -1){
+                var check4 = 'Es Positivo'
+            }else {
+                var check4 = 'Es Negativo'
+            }
+            return check4 ;
+        }
+        var simbols = esPositivoONegativo(-89);
+        const resp15 = document.getElementById('resp15');
+        resp15.innerHTML = simbols;
+        
+    </script>
+
+    <h4>Ejercicio 16</h4>
+    <p id = 'resp16'></p>
+    <script>
+        
+
+        function puedeConducir(edad,licencia) {
+            
+           if (edad >= 18 , licencia === 'si') {
+
+                var maneja = true   
+            
+           }else if (edad <= 18 , licencia === 'no'){
+
+                var maneja = false
+           }else if (edad <= 18 , licencia === 'si'){
+
+                var maneja = true
+           } return maneja;
+        }
+        var conduccion = puedeConducir(21,'no');
+        const resp16 = document.getElementById('resp16');
+        resp16.innerHTML = conduccion;
+        
+    </script>
+
+    
+</body>
+</html>
